@@ -1,0 +1,112 @@
+.app {
+    position: relative;
+    height: 100vh;
+
+    .container {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%);
+        width: 750px;
+        display: flex;
+        flex-direction: column;
+        grid-gap: 20px;
+
+        .menu {
+            background-color: #fff;
+            width: 100%;
+            padding: 20px;
+            border-radius: 15px;
+
+            .inputs {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                .box {
+                    display: flex;
+                    grid-gap: 20px;
+                    align-items: center;
+
+                    label {
+                        display: flex;
+                        flex-direction: column;
+                        grid-gap: 15px;
+                    }
+
+                    .range {
+                        -webkit-appearance: none;
+                        width: 200px;
+                        border: 1px solid gray;
+                        border-radius: 25px;
+                        outline: none;
+                        height: 10px;
+                    }
+
+                    .range::-webkit-slider-thumb {
+                        -webkit-appearance: none;
+                        width: 15px;
+                        height: 15px;
+                        background-color: blue;
+                        border-radius: 100%;
+                        cursor: pointer;
+                    }
+
+                    span {
+                        width: 50px;
+                        -ms-user-select: none;
+                        -moz-user-select: none;
+                        -webkit-user-select: none;
+                        user-select: none;
+                    }
+                }
+            }
+
+            .btns {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-top: 20px;
+
+                button {
+                    background-color: yellowgreen;
+                    border: none;
+                    padding: 10px;
+                    border-radius: 10px;
+                    text-transform: uppercase;
+                    color: #fff;
+                    font-weight: 600;
+                    width: 150px;
+                    height: 40px;
+                    cursor: pointer;
+                }
+
+                input[type="color"] {
+                    -webkit-appearance: none;
+                    border: none;
+                    background: transparent;
+                }
+
+                input[type="color"]::-webkit-color-swatch {
+                    padding: 0;
+                    border-radius: 10px;
+                }
+            }
+        }
+
+        .grid {
+            background-color: #fff;
+            width: 100%;
+            padding: 20px;
+            border-radius: 15px;
+            display: grid;
+
+
+            .item {
+                background-color: #fff;
+                border: 1px solid gray;
+            }
+        }
+    }
+}
